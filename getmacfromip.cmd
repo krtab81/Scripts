@@ -1,4 +1,4 @@
-:: Obtener la MAC de una IP determinada
+:: Get MAC using IP address
 
 @echo off
 ping -n 1 %1 >nul
