@@ -81,6 +81,7 @@ function SaveWordAsPDF ($filePath) {
     $word = New-Object -ComObject Word.Application
     $doc = $word.Documents.Open($filePath)
     $pdfPath = PathOfPDF $filePath
+    # FIXME: Does not work anymore
     #$doc.SaveAs($pdfPath, [ref]$WORD_PDF)	
     #$doc.SaveAs2($pdfPath, [ref]$WORD_PDF)
     $doc.ExportAsFixedFormat($WORD_PDF, $pdfPath)
